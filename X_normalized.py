@@ -7,3 +7,5 @@ xbar = np.mean(X)
 sdev = np.std(X)
 #Use the formula to normalize x
 z = (X - xbar)/sdev
+#Time to Save the Noramlized X, z
+np.savez('X_normalized.npy', z)
